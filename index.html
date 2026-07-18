@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pragyan Forum | Department of Computer Science & Engineering (Data Science)</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Official portal of Pragyan, the departmental forum of Computer Science & Engineering (Data Science).">
+  <meta name="keywords" content="Pragyan, Pragyan Forum, Computer Science, Data Science, Department Forum, Engineering, Tech Events">
+  <meta name="author" content="Technical Administrator & Technical Committee">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Grid Overlay -->
+  <div class="grid-overlay"></div>
+  <div class="gradient-glow-1"></div>
+  <div class="gradient-glow-2"></div>
+
+  <!-- SVG Gradients -->
+  <svg style="width:0; height:0; position:absolute;" aria-hidden="true">
+    <defs>
+      <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#f59e0b" />
+        <stop offset="100%" stop-color="#d97706" />
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <!-- 1. Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo" onclick="navigateToSectionGlobal(event, '#home')">
+        <img src="assest/logo/pragyan logo white.png" alt="Pragyan Logo" class="logo-img">
+        <span class="logo-text">PRAGYAN</span>
+      </a>
+      
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#committees" class="nav-link">Committee</a></li>
+        <li><a href="#updates" class="nav-link">Updates</a></li>
+        <li><a href="#footer" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- SPA VIEWS WRAPPER -->
+  <div id="spa-content-wrapper">
+
+    <!-- VIEW 1: HOME (Hero) -->
+    <div id="home-view" class="page-section active">
+      <!-- 2. Hero Section -->
+      <section class="hero" id="home">
+        <div class="container">
+          <div class="hero-content reveal reveal-up active">
+            <div class="hero-welcome">WELCOME TO...</div>
+            <h1 class="hero-title-main">PRAGYAN<br>FORUM</h1>
+            <p class="hero-subtitle">Department of Computer Science & Engineering (Data Science)</p>
+            <div class="hero-actions">
+              <a href="#about" class="glass-btn">Explore Forum</a>
+              <a href="#committees" class="glass-btn secondary">Committees</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- VIEW 2: ABOUT (About Description, Vision/Mission, Stats, Mentors) -->
+    <div id="about-view" class="page-section">
+      <!-- 3. About & Vision Section -->
+      <section class="about" id="about">
+        <div class="container">
+          <div class="section-header reveal reveal-up">
+            <span class="section-tag">Identity</span>
+            <h2 class="section-title">About the Forum</h2>
+            <p class="section-desc">Empowering future leaders through continuous skill enhancement, industry alignment, and collaborative opportunities.</p>
+          </div>
+
+          <div class="about-grid">
+            <!-- Column 1: Vision/Mission Cards + Paragraphs -->
+            <div class="about-left-column">
+              <div class="vm-row">
+                <!-- Vision -->
+                <div class="vm-card glass-panel reveal reveal-up">
+                  <div class="vm-icon-box">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                      <circle cx="12" cy="12" r="3"></circle>
+                    </svg>
+                  </div>
+                  <div class="vm-content">
+                    <h3>Vision</h3>
+                    <p>“ To be recognized as a center of excellence in the field of information Technology where inquisitive minds are fostered, leading to skill professionals for satisfying the need of society. ”</p>
+                  </div>
+                </div>
+
+                <!-- Mission -->
+                <div class="vm-card glass-panel reveal reveal-up" style="transition-delay: 0.1s;">
+                  <div class="vm-icon-box">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <circle cx="12" cy="12" r="6"></circle>
+                      <circle cx="12" cy="12" r="2"></circle>
+                    </svg>
+                  </div>
+                  <div class="vm-content">
+                    <h3>Mission</h3>
+                    <p style="margin-bottom: 8px;">"Apply knowledge of engineering fundamentals and cutting-edge technology to identify and implements innovative solutions for engineering problems and issues in society."</p>
+                    <p>"Build strong interpersonal skill and will engage in life-long learning to enhance their career positions, both as team members and leaders.”</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Paragraph Details -->
+              <div class="about-intro-card glass-panel reveal reveal-up" style="transition-delay: 0.2s;">
+                <p><strong>Pragyan</strong> serves as the collective student-faculty node for the <strong>Department of Computer Science & Engineering (Data Science)</strong>. Our core motivation is to empower the next generation of engineers, builders, and data thinkers to exceed standard academic bounds.</p>
+                <p>Through coding hackathons, guest seminars, creative visual workshops, and team dynamics, we construct an environment focused on <strong>industry readiness</strong>, technical versatility, and proactive leadership. Whether managing state-of-the-art database systems, designing graphical modules, or organizing inter-college sports trials, Pragyan members drive practical growth.</p>
+                <div class="about-actions" style="margin-top: 15px;">
+                  <a href="#committees" class="glass-btn">View Departments</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Column 2: Standalone Campus Photo -->
+            <div class="about-aside-card glass-panel reveal reveal-left">
+              <img src="assest/campus photos/beside about the forum.png" alt="Campus Grounds" class="about-aside-img">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Stats Counter Section -->
+      <section class="stats" id="stats">
+        <div class="container">
+          <div class="stats-grid">
+            <div class="stat-card glass-panel reveal reveal-up">
+              <div class="stat-number" data-target="8">0</div>
+              <div class="stat-label">Committees</div>
+            </div>
+            <div class="stat-card glass-panel reveal reveal-up" style="transition-delay: 0.1s;">
+              <div class="stat-number" data-target="71">0</div>
+              <div class="stat-label">Members & Admins</div>
+            </div>
+            <div class="stat-card glass-panel reveal reveal-up" style="transition-delay: 0.2s;">
+              <div class="stat-number" data-target="2023">0</div>
+              <div class="stat-label">Est. 2023</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4.1 Meet Our Mentors Section -->
+      <section class="mentors" id="mentors">
+        <div class="container">
+          <div class="section-header reveal reveal-up">
+            <span class="section-tag">Guidance</span>
+            <h2 class="section-title">Meet Our Mentors</h2>
+            <p class="section-desc">Mentors guide students through academic and personal growth, offering support, advice, and encouragement.</p>
+          </div>
+
+          <div class="mentors-grid">
+            <!-- Principal -->
+            <div class="mentor-card glass-panel reveal reveal-up">
+              <div class="mentor-img-box">
+                <span class="mentor-placeholder">SS</span>
+              </div>
+              <h3 class="mentor-name">Dr. Shrikant V. Sonekar</h3>
+              <div class="mentor-role">Principal, JDCOEM</div>
+              <p class="mentor-desc">Education drives progress and innovation. Our institution nurtures minds and fosters creativity, providing students with the tools to excel in a dynamic world.</p>
+            </div>
+
+            <!-- HOD -->
+            <div class="mentor-card glass-panel reveal reveal-up" style="transition-delay: 0.1s;">
+              <div class="mentor-img-box">
+                <span class="mentor-placeholder">HT</span>
+              </div>
+              <h3 class="mentor-name">Dr. Hemant Turkar</h3>
+              <div class="mentor-role">HOD, CSE(DS) - JDCOEM</div>
+              <p class="mentor-desc">Data Science and Engineering drives the future of computation. We foster analytical intelligence and creative programming to solve next-generation engineering problems.</p>
+            </div>
+
+            <!-- Academic Incharge -->
+            <div class="mentor-card glass-panel reveal reveal-up" style="transition-delay: 0.2s;">
+              <div class="mentor-img-box">
+                <span class="mentor-placeholder">MB</span>
+              </div>
+              <h3 class="mentor-name">Prof. Mirza M. Baig</h3>
+              <div class="mentor-role">Academic Incharge</div>
+              <p class="mentor-desc">We are committed to academic excellence, encouraging intellectual curiosity and rigor. Our goal is to equip students with the knowledge and skills for success and inspire lifelong learning.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- VIEW 3: COMMITTEE (Faculty Forum Incharge, Admins, Committees Grid) -->
+    <div id="committee-view" class="page-section">
+      <!-- 4.2 Meet Our Forum Body -->
+      <section class="forum-body" id="forum-body">
+        <div class="container">
+          <div class="section-header reveal reveal-up">
+            <span class="section-tag">Leadership</span>
+            <h2 class="section-title">Meet Our Forum Body</h2>
+            <p class="section-desc">Meet our Faculty Forum Incharge and Student Admin team.</p>
+          </div>
+
+          <!-- Forum Incharge -->
+          <div class="com-member-heading" style="margin-bottom: 24px;">Forum Incharge</div>
+          <div class="com-profiles-grid" style="margin-bottom: 50px;">
+            <div class="admin-card glass-panel reveal reveal-up" style="width: 260px;">
+              <div class="admin-img-box" style="width: 120px; height: 120px;">
+                <span class="admin-placeholder">KM</span>
+              </div>
+              <h3 class="mentor-name">Prof. Karishma Misal</h3>
+              <div class="mentor-role">Forum Incharge</div>
+            </div>
+          </div>
+
+          <!-- Student Admins Grid -->
+          <div class="com-member-heading" style="margin-bottom: 30px;">Student Admins</div>
+          <div class="admins-grid">
+            <div class="admin-card glass-panel reveal reveal-up">
+              <div class="admin-img-box">
+                <span class="admin-placeholder">AS</span>
+              </div>
+              <h3 class="mentor-name">Arundhati Shinde</h3>
+              <div class="mentor-role">President</div>
+            </div>
+            <div class="admin-card glass-panel reveal reveal-up">
+              <div class="admin-img-box">
+                <span class="admin-placeholder">RS</span>
+              </div>
+              <h3 class="mentor-name">Rohan Salunke</h3>
+              <div class="mentor-role">Vice President</div>
+            </div>
+            <div class="admin-card glass-panel reveal reveal-up">
+              <div class="admin-img-box">
+                <span class="admin-placeholder">AA</span>
+              </div>
+              <h3 class="mentor-name">Ahsan Ateeb</h3>
+              <div class="mentor-role">Secretary</div>
+            </div>
+            <div class="admin-card glass-panel reveal reveal-up">
+              <div class="admin-img-box">
+                <span class="admin-placeholder">AS</span>
+              </div>
+              <h3 class="mentor-name">Alok Sakharkar</h3>
+              <div class="mentor-role">Joint- Secretary</div>
+            </div>
+            <div class="admin-card glass-panel reveal reveal-up">
+              <div class="admin-img-box">
+                <span class="admin-placeholder">SW</span>
+              </div>
+              <h3 class="mentor-name">Sakshant Waghmare</h3>
+              <div class="mentor-role">Treasurer</div>
+            </div>
+            <div class="admin-card glass-panel reveal reveal-up">
+              <div class="admin-img-box">
+                <span class="admin-placeholder">SN</span>
+              </div>
+              <h3 class="mentor-name">Siddhi Nagpure</h3>
+              <div class="mentor-role">Joint-Treasurer</div>
+            </div>
+            <div class="admin-card glass-panel reveal reveal-up">
+              <div class="admin-img-box">
+                <span class="admin-placeholder">GP</span>
+              </div>
+              <h3 class="mentor-name">Gokul Pawar</h3>
+              <div class="mentor-role">Digital Administrator</div>
+            </div>
+            <div class="admin-card glass-panel reveal reveal-up">
+              <div class="admin-img-box">
+                <span class="admin-placeholder">AK</span>
+              </div>
+              <h3 class="mentor-name">Abhay Kamble</h3>
+              <div class="mentor-role">Technical Administrator</div>
+            </div>
+            <div class="admin-card glass-panel reveal reveal-up">
+              <div class="admin-img-box">
+                <span class="admin-placeholder">SB</span>
+              </div>
+              <h3 class="mentor-name">Shreyash Bagde</h3>
+              <div class="mentor-role">Cultural Administrator</div>
+            </div>
+            <div class="admin-card glass-panel reveal reveal-up">
+              <div class="admin-img-box">
+                <span class="admin-placeholder">KH</span>
+              </div>
+              <h3 class="mentor-name">Kiran Harinkhede</h3>
+              <div class="mentor-role">Spokesperson</div>
+            </div>
+            <div class="admin-card glass-panel reveal reveal-up">
+              <div class="admin-img-box">
+                <span class="admin-placeholder">SP</span>
+              </div>
+              <h3 class="mentor-name">Siddhi Patil</h3>
+              <div class="mentor-role">Co-Spokesperson</div>
+            </div>
+            <div class="admin-card glass-panel reveal reveal-up">
+              <div class="admin-img-box">
+                <span class="admin-placeholder">PD</span>
+              </div>
+              <h3 class="mentor-name">Pooja Dehankar</h3>
+              <div class="mentor-role">Co-Spokesperson</div>
+            </div>
+            <div class="admin-card glass-panel reveal reveal-up">
+              <div class="admin-img-box">
+                <span class="admin-placeholder">RS</span>
+              </div>
+              <h3 class="mentor-name">Riddesh Sahare</h3>
+              <div class="mentor-role">Co-Spokesperson</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. Committees Section -->
+      <section class="committees" id="committees-list">
+        <div class="container">
+          <div class="section-header reveal reveal-up">
+            <span class="section-tag">Structure</span>
+            <h2 class="section-title">Check Out Our Committees</h2>
+            <p class="section-desc">Click on any committee card to view its Head, Co-Heads, and Members list dynamically below.</p>
+          </div>
+
+          <div class="committees-grid">
+            <!-- 1. Technical Committee -->
+            <div class="committee-card glass-panel reveal reveal-up" onclick="selectActiveCommittee('technical')" style="cursor: pointer;">
+              <div class="committee-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="committee-title">Technical Committee</h3>
+              <p class="committee-desc">Drives codebase reviews, handles data processing tasks, and designs programmatic challenges for internal development.</p>
+              <div class="committee-resp">
+                <div class="committee-resp-title">Responsibilities</div>
+                <ul class="committee-resp-list">
+                  <li class="committee-resp-item">Coordinate monthly hackathons</li>
+                  <li class="committee-resp-item">Build and review open-source utility tools</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- 2. Event Committee -->
+            <div class="committee-card glass-panel reveal reveal-up" onclick="selectActiveCommittee('event')" style="cursor: pointer;">
+              <div class="committee-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+              </div>
+              <h3 class="committee-title">Event Committee</h3>
+              <p class="committee-desc">Supervises scheduling, timeline coordination, speaker alignments, and resource planning for all activities.</p>
+              <div class="committee-resp">
+                <div class="committee-resp-title">Responsibilities</div>
+                <ul class="committee-resp-list">
+                  <li class="committee-resp-item">Plan and execute guest tech talks</li>
+                  <li class="committee-resp-item">Draft detailed event schedules</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- 3. Publicity Committee -->
+            <div class="committee-card glass-panel reveal reveal-up" onclick="selectActiveCommittee('publicity')" style="cursor: pointer;">
+              <div class="committee-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                  <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                </svg>
+              </div>
+              <h3 class="committee-title">Publicity Committee</h3>
+              <p class="committee-desc">Manages offline awareness, poster campaigns, department circular distributions, and crowd coordination.</p>
+              <div class="committee-resp">
+                <div class="committee-resp-title">Responsibilities</div>
+                <ul class="committee-resp-list">
+                  <li class="committee-resp-item">Organize classroom awareness sessions</li>
+                  <li class="committee-resp-item">Distribute informational pamphlets</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- 4. Creative Committee -->
+            <div class="committee-card glass-panel reveal reveal-up" onclick="selectActiveCommittee('creative')" style="cursor: pointer;">
+              <div class="committee-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 13.52 2.34 14.96 2.95 16.27L2.05 21.05L6.92 20.25C8.16 21.36 9.79 22 12 22Z"></path>
+                  <circle cx="7.5" cy="10.5" r="1.5" fill="currentColor"></circle>
+                  <circle cx="11.5" cy="7.5" r="1.5" fill="currentColor"></circle>
+                  <circle cx="16.5" cy="9.5" r="1.5" fill="currentColor"></circle>
+                </svg>
+              </div>
+              <h3 class="committee-title">Creative Committee</h3>
+              <p class="committee-desc">Designs branding flyers, department posters, brochures, digital vectors, and aesthetic UI layouts.</p>
+              <div class="committee-resp">
+                <div class="committee-resp-title">Responsibilities</div>
+                <ul class="committee-resp-list">
+                  <li class="committee-resp-item">Draft marketing flyer materials</li>
+                  <li class="committee-resp-item">Create branding themes for fests</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- 5. Digital Committee -->
+            <div class="committee-card glass-panel reveal reveal-up" onclick="selectActiveCommittee('digital')" style="cursor: pointer;">
+              <div class="committee-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <h3 class="committee-title">Digital Committee</h3>
+              <p class="committee-desc">Deploys website portals, builds portal systems, and controls digital systems during live presentations.</p>
+              <div class="committee-resp">
+                <div class="committee-resp-title">Responsibilities</div>
+                <ul class="committee-resp-list">
+                  <li class="committee-resp-item">Host and maintain department portal</li>
+                  <li class="committee-resp-item">Set up audio-visual presentation nodes</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- 6. Discipline Committee -->
+            <div class="committee-card glass-panel reveal reveal-up" onclick="selectActiveCommittee('discipline')" style="cursor: pointer;">
+              <div class="committee-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <h3 class="committee-title">Discipline Committee</h3>
+              <p class="committee-desc">Maintains campus protocols, monitors student entries, and guarantees orderly conduct during major events.</p>
+              <div class="committee-resp">
+                <div class="committee-resp-title">Responsibilities</div>
+                <ul class="committee-resp-list">
+                  <li class="committee-resp-item">Supervise crowd seating queues</li>
+                  <li class="committee-resp-item">Coordinate with college safety units</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- 7. Hospitality Committee -->
+            <div class="committee-card glass-panel reveal reveal-up" onclick="selectActiveCommittee('hospitality')" style="cursor: pointer;">
+              <div class="committee-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+              </div>
+              <h3 class="committee-title">Hospitality Committee</h3>
+              <p class="committee-desc">Welcomes visiting guests, aligns VIP requirements, and administers food, beverage, and reception zones.</p>
+              <div class="committee-resp">
+                <div class="committee-resp-title">Responsibilities</div>
+                <ul class="committee-resp-list">
+                  <li class="committee-resp-item">Receive and brief keynote speakers</li>
+                  <li class="committee-resp-item">Manage food court logistics</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- 8. Sports Committee -->
+            <div class="committee-card glass-panel reveal reveal-up" onclick="selectActiveCommittee('sports')" style="cursor: pointer;">
+              <div class="committee-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+                  <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+                  <path d="M4 22h16"></path>
+                  <path d="M10 14.66V17c0 .55-.45 1-1 1H4v2h16v-2h-5c-.55 0-1-.45-1-1v-2.34"></path>
+                  <path d="M12 2a5 5 0 0 0-5 5v3c0 2.76 2.24 5 5 5s5-2.24 5-5V7a5 5 0 0 0-5-5z"></path>
+                </svg>
+              </div>
+              <h3 class="committee-title">Sports Committee</h3>
+              <p class="committee-desc">Arranges internal tournaments, monitors sports assets, and guides team selections for varsity leagues.</p>
+              <div class="committee-resp">
+                <div class="committee-resp-title">Responsibilities</div>
+                <ul class="committee-resp-list">
+                  <li class="committee-resp-item">Organize annual sports meet trials</li>
+                  <li class="committee-resp-item">Allocate fitness gear and accessories</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- 9. Cultural Committee -->
+            <div class="committee-card glass-panel reveal reveal-up" onclick="selectActiveCommittee('cultural')" style="cursor: pointer;">
+              <div class="committee-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 18V5l12-2v13"></path>
+                  <circle cx="6" cy="18" r="3"></circle>
+                  <circle cx="18" cy="16" r="3"></circle>
+                </svg>
+              </div>
+              <h3 class="committee-title">Cultural Committee</h3>
+              <p class="committee-desc">Steers dance, music, theater presentations, and coordinates performance rosters for college celebrations.</p>
+              <div class="committee-resp">
+                <div class="committee-resp-title">Responsibilities</div>
+                <ul class="committee-resp-list">
+                  <li class="committee-resp-item">Coordinate stage performance lineups</li>
+                  <li class="committee-resp-item">Manage audio-visual background assets</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- 10. Non-technical Committee -->
+            <div class="committee-card glass-panel reveal reveal-up" onclick="selectActiveCommittee('nontech')" style="cursor: pointer;">
+              <div class="committee-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+              </div>
+              <h3 class="committee-title">Non-technical Committee</h3>
+              <p class="committee-desc">Organizes team quizzes, debate rounds, treasure hunt trials, and schedules interactive campus activities.</p>
+              <div class="committee-resp">
+                <div class="committee-resp-title">Responsibilities</div>
+                <ul class="committee-resp-list">
+                  <li class="committee-resp-item">Run campus quiz master rounds</li>
+                  <li class="committee-resp-item">Manage non-technical fest registration</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- 11. Social Media Committee -->
+            <div class="committee-card glass-panel reveal reveal-up" onclick="selectActiveCommittee('socialmedia')" style="cursor: pointer;">
+              <div class="committee-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                </svg>
+              </div>
+              <h3 class="committee-title">Social Media Committee</h3>
+              <p class="committee-desc">Controls online handles, designs interactive posts, creates reels, and builds virtual coverage drives.</p>
+              <div class="committee-resp">
+                <div class="committee-resp-title">Responsibilities</div>
+                <ul class="committee-resp-list">
+                  <li class="committee-resp-item">Publish live Instagram event stories</li>
+                  <li class="committee-resp-item">Design graphic posts for LinkedIn feeds</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dynamic Detailed Display Card -->
+          <div class="committee-body-display glass-panel reveal reveal-up" id="committee-display-card" style="margin-top: 40px;">
+            <!-- Filled dynamically via app.js -->
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- VIEW 4: UPDATES (News, Sidebar, Contact details) -->
+    <div id="updates-view" class="page-section">
+      <!-- 6. News & Updates Feed -->
+      <section class="updates" id="updates">
+        <div class="container">
+          <div class="section-header reveal reveal-up">
+            <span class="section-tag">Activity</span>
+            <h2 class="section-title">News & Updates Feed</h2>
+            <p class="section-desc">Stay tuned for the latest developments, technical seminars, and student announcements in the department.</p>
+          </div>
+
+          <div class="updates-grid">
+            <!-- Main Feed -->
+            <div class="feed-container">
+              <!-- Feed Item 1 -->
+              <div class="feed-item glass-panel reveal reveal-left">
+                <div class="feed-content">
+                  <div class="feed-header">
+                    <h3 class="feed-title">Brainwave Hackathon</h3>
+                    <span class="feed-badge event">Upcoming Event</span>
+                  </div>
+                  <p class="feed-text">Collaborate in teams to develop creative, technology-driven solutions for real-world challenges in this fast-paced 24-hour innovation sprint. Rapid prototyping, problem solving, and technical excellence await.</p>
+                </div>
+              </div>
+
+              <!-- Feed Item 2 -->
+              <div class="feed-item glass-panel reveal reveal-left">
+                <div class="feed-content">
+                  <div class="feed-header">
+                    <h3 class="feed-title">Technical Workshop Series</h3>
+                    <span class="feed-badge announcement">Expert-Led</span>
+                  </div>
+                  <p class="feed-text">Equip yourself with industry-relevant skills. The series covers ICPC preparation, Codechef & Leetcode problem solving, competitive programming, research paper writing, and technical documentation.</p>
+                </div>
+              </div>
+
+              <!-- Feed Item 3 -->
+              <div class="feed-item glass-panel reveal reveal-left">
+                <div class="feed-content">
+                  <div class="feed-header">
+                    <h3 class="feed-title">Clash of Departments (CoD)</h3>
+                    <span class="feed-badge blog">Achievement</span>
+                  </div>
+                  <p class="feed-text">Flagship inter-departmental competition featuring technical and cultural challenges. Special Mention: The Department of Computer Science & Engineering (Data Science) proudly secured the Championship Title in the first edition!</p>
+                </div>
+              </div>
+
+              <!-- Feed Item 4 -->
+              <div class="feed-item glass-panel reveal reveal-left">
+                <div class="feed-content">
+                  <div class="feed-header">
+                    <h3 class="feed-title">Mock Interview Series</h3>
+                    <span class="feed-badge event">Placement Prep</span>
+                  </div>
+                  <p class="feed-text">Simulate the recruitment process of leading companies. Participants undergo Aptitude Tests, Group Discussions (GD), and Mock Personal Interviews (PI) with experienced mentors to refine corporate readiness.</p>
+                </div>
+              </div>
+
+              <!-- Feed Item 5 -->
+              <div class="feed-item glass-panel reveal reveal-left">
+                <div class="feed-content">
+                  <div class="feed-header">
+                    <h3 class="feed-title">Startup Idea Pitch</h3>
+                    <span class="feed-badge event">Competition</span>
+                  </div>
+                  <p class="feed-text">Present your unique business ideas and technology-driven models to a panel of startup mentors and judges. Develop your pitches, highlight market potential, and secure feedback on real-world ventures.</p>
+                </div>
+              </div>
+
+              <!-- Feed Item 6 -->
+              <div class="feed-item glass-panel reveal reveal-left">
+                <div class="feed-content">
+                  <div class="feed-header">
+                    <h3 class="feed-title">Installation Ceremony & Induction</h3>
+                    <span class="feed-badge announcement">Announcement</span>
+                  </div>
+                  <p class="feed-text">Officially welcomed the admitted freshers and inducted the newly elected office bearers and committee members of Pragyan to lead the forum actions for the upcoming academic tenure.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Updates Sidebar -->
+            <div class="updates-sidebar">
+              <div class="sidebar-card glass-panel reveal reveal-right">
+                <h3>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 0 1-3.46 0"></path>
+                  </svg>
+                  Important Links
+                </h3>
+                <ul class="sidebar-links">
+                  <li>
+                    <a href="#">Academic Syllabus 2026-27
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">Lab Assessment Schedule
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">Faculty Directory
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="sidebar-card glass-panel reveal reveal-right">
+                <h3>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  Contact Desk
+                </h3>
+                <p style="color: var(--text-dark-muted); font-size: 0.88rem; margin-bottom: 12px;">For grievances, event proposals, or membership queries, mail us directly:</p>
+                <a href="mailto:pragyan.ds@college.edu" class="glass-btn" style="padding: 8px 16px; font-size: 0.85rem; width: 100%; justify-content: center;">pragyan.ds@college.edu</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </div>
+
+  <!-- 7. Footer Section (Rendered at the bottom of every page) -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="logo" style="margin-bottom: 16px;" onclick="navigateToSectionGlobal(event, '#home')">
+            <img src="assest/logo/pragyan logo white.png" alt="Pragyan Logo" class="logo-img">
+            <span class="logo-text">PRAGYAN</span>
+          </a>
+          <p>"Progress Beyond Excellence" — Official body of the Department of Computer Science & Engineering (Data Science).</p>
+          <div class="footer-socials">
+            <a href="https://instagram.com" target="_blank" class="social-icon" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://whatsapp.com" target="_blank" class="social-icon" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="social-icon" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-nav">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#committees">Committee</a></li>
+            <li><a href="#updates">Updates</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-map">
+          <h4>Our Headquarters</h4>
+          <div class="map-placeholder">
+            <iframe 
+              title="Campus Location" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.7328906354675!2d80.22061937586548!3d13.05269381308316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5266e342211993%3A0xe5cdcd0cb253a63b!2sDepartment%20of%20Computer%20Science%2C%20Anna%20University!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Pragyan Forum - © 2026 | All Rights Reserved.</p>
+        <div class="footer-credit">
+          Made by <span>Technical Administrator</span> and <span>technical committee</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>
