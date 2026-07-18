@@ -218,17 +218,21 @@ document.addEventListener('DOMContentLoaded', () => {
     technical: {
       title: "Technical Committee",
       tagline: "Drives coding hackathons and utility tool development",
-      head: { name: "Gaurav Dhage", role: "Head Technical Committee" },
+      heads: [
+        { name: "Gaurav Dhage", role: "Head Technical Committee" }
+      ],
       coHeads: [
         { name: "Prathamesh Waghmare", role: "Co-Head" },
         { name: "Huzaifa Sheikh", role: "Co-Head" }
       ],
-      members: ["Dhanshree Raut", "Sanchita Raut", "Ujjwal Dangare", "Vibhanshu Gajalkar", "Anshuman Zalke"]
+      members: ["Dhanshree Raut", "Sanchita Raut", "Ujjwal Dangare", "Vibhanshu Gajalkar", "Anshuman Zalke", "Abhijit Kohle"]
     },
     event: {
       title: "Event Committee",
       tagline: "Coordination, speaker alignments, and resource scheduling",
-      head: { name: "Samiksha Bansod", role: "Head Event Committee" },
+      heads: [
+        { name: "Samiksha Bansod", role: "Head Event Committee" }
+      ],
       coHeads: [
         { name: "Aishwarya Ajbale", role: "Co-Head" },
         { name: "Sumedhbodhi Thoke", role: "Co-Head" }
@@ -238,7 +242,10 @@ document.addEventListener('DOMContentLoaded', () => {
     publicity: {
       title: "Publicity Committee",
       tagline: "Spreads offline awareness and conducts campaigns",
-      head: { name: "Mayank Thool & Aarya Khetan", role: "Heads Publicity Committee" },
+      heads: [
+        { name: "Mayank Thool", role: "Head Publicity Committee" },
+        { name: "Aarya Khetan", role: "Head Publicity Committee" }
+      ],
       coHeads: [
         { name: "Alfiya Pathan", role: "Co-Head" },
         { name: "Prince Meshram", role: "Co-Head" }
@@ -248,7 +255,9 @@ document.addEventListener('DOMContentLoaded', () => {
     creative: {
       title: "Creative Committee",
       tagline: "Designs department branding flyers and graphics",
-      head: { name: "Latika Borkar", role: "Head Creative Committee" },
+      heads: [
+        { name: "Latika Borkar", role: "Head Creative Committee" }
+      ],
       coHeads: [
         { name: "Vedant Munde", role: "Co-Head" },
         { name: "Anushka Munne", role: "Co-Head" }
@@ -258,7 +267,9 @@ document.addEventListener('DOMContentLoaded', () => {
     digital: {
       title: "Digital Committee",
       tagline: "Empowering Digital Transformation",
-      head: { name: "Ziaan Ali", role: "Head Digital Committee" },
+      heads: [
+        { name: "Ziaan Ali", role: "Head Digital Committee" }
+      ],
       coHeads: [
         { name: "Shrawani Nakhate", role: "Co-Head Digital Committee" }
       ],
@@ -267,7 +278,10 @@ document.addEventListener('DOMContentLoaded', () => {
     discipline: {
       title: "Discipline Committee",
       tagline: "Guarantees student protocol adherence during fests",
-      head: { name: "Chetali Kumbhare & Rohan Thaokar", role: "Heads Discipline Committee" },
+      heads: [
+        { name: "Chetali Kumbhare", role: "Head Discipline Committee" },
+        { name: "Rohan Thaokar", role: "Head Discipline Committee" }
+      ],
       coHeads: [
         { name: "Rahimeen Sheikh", role: "Co-Head (Girls)" },
         { name: "Soham Bainwad", role: "Co-Head (Boys)" }
@@ -277,7 +291,9 @@ document.addEventListener('DOMContentLoaded', () => {
     hospitality: {
       title: "Hospitality Committee",
       tagline: "VIP reception and food court logistics management",
-      head: { name: "Rijul Gajghate", role: "Head Hospitality Committee" },
+      heads: [
+        { name: "Rijul Gajghate", role: "Head Hospitality Committee" }
+      ],
       coHeads: [
         { name: "Sanjivini Girde", role: "Co-Head" },
         { name: "Riya Lanjekar", role: "Co-Head" }
@@ -287,7 +303,10 @@ document.addEventListener('DOMContentLoaded', () => {
     sports: {
       title: "Sports Committee",
       tagline: "Organizes college tournaments and guides squad lists",
-      head: { name: "Sahil Pathak & Gaytri Banate", role: "Heads Sports Committee" },
+      heads: [
+        { name: "Sahil Pathak", role: "Head Sports Committee" },
+        { name: "Gaytri Banate", role: "Head Sports Committee" }
+      ],
       coHeads: [
         { name: "Parth Mothghare", role: "Co-Head" },
         { name: "Trupti Thool", role: "Co-Head" }
@@ -297,7 +316,9 @@ document.addEventListener('DOMContentLoaded', () => {
     cultural: {
       title: "Cultural Committee",
       tagline: "Coordinates music, dance, and stage performances",
-      head: { name: "Damini Kawale", role: "Head Cultural Committee" },
+      heads: [
+        { name: "Damini Kawale", role: "Head Cultural Committee" }
+      ],
       coHeads: [
         { name: "Mayank Daware", role: "Co-Head" }
       ],
@@ -306,7 +327,9 @@ document.addEventListener('DOMContentLoaded', () => {
     nontech: {
       title: "Non-Technical Committee",
       tagline: "Manages quizzes, debates, and dynamic campus games",
-      head: { name: "Kunal Khande", role: "Head Non-Technical Committee" },
+      heads: [
+        { name: "Kunal Khande", role: "Head Non-Technical Committee" }
+      ],
       coHeads: [
         { name: "Riaansh Nawale", role: "Co-Head" },
         { name: "Vijay Bharbat", role: "Co-Head" }
@@ -316,7 +339,9 @@ document.addEventListener('DOMContentLoaded', () => {
     socialmedia: {
       title: "Social Media Committee",
       tagline: "Reels creation and live Instagram coverage drives",
-      head: { name: "Nirmal Raut", role: "Head Social Media Committee" },
+      heads: [
+        { name: "Nirmal Raut", role: "Head Social Media Committee" }
+      ],
       coHeads: [
         { name: "Atharva Rudrakar", role: "Co-Head" }
       ],
@@ -343,16 +368,16 @@ document.addEventListener('DOMContentLoaded', () => {
     // 3. Inject content structure
     const displayCard = document.getElementById('committee-display-card');
     
-    // Format Head profile HTML
-    const headHtml = `
+    // Format Heads profiles HTML
+    const headsHtml = com.heads.map(h => `
       <div class="com-profile-card">
         <div class="com-profile-img-box">
-          <span class="com-profile-placeholder">${com.head.name.split(' ')[0].substring(0,2).toUpperCase()}</span>
+          <span class="com-profile-placeholder">${h.name.split(' ')[0].substring(0,2).toUpperCase()}</span>
         </div>
-        <div class="com-profile-name">${com.head.name}</div>
-        <div class="com-profile-role">${com.head.role}</div>
+        <div class="com-profile-name">${h.name}</div>
+        <div class="com-profile-role">${h.role}</div>
       </div>
-    `;
+    `).join('');
 
     // Format Co-Heads profiles HTML
     const coHeadsHtml = com.coHeads.map(co => `
@@ -376,9 +401,9 @@ document.addEventListener('DOMContentLoaded', () => {
         <p class="com-display-tagline">“ ${com.tagline} ”</p>
       </div>
 
-      <div class="com-member-heading">Committee Head</div>
+      <div class="com-member-heading">Committee Head(s)</div>
       <div class="com-profiles-grid">
-        ${headHtml}
+        ${headsHtml}
       </div>
 
       <div class="com-member-heading">Committee Co-Head(s)</div>
