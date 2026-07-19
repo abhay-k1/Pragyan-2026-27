@@ -11,6 +11,7 @@
   <meta name="author" content="Technical Administrator & Technical Committee">
   
   <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -35,7 +36,6 @@
     <div class="nav-container">
       <a href="#home" class="logo" onclick="navigateToSectionGlobal(event, '#home')">
         <img src="assest/logo/pragyan logo white.png" alt="Pragyan Logo" class="logo-img">
-        <span class="logo-text">PRAGYAN</span>
       </a>
       
       <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
@@ -68,13 +68,109 @@
             <div class="hero-welcome">WELCOME TO...</div>
             <h1 class="hero-title-main">PRAGYAN<br>FORUM</h1>
             <p class="hero-subtitle">Department of Computer Science & Engineering (Data Science)</p>
-            <div class="hero-actions">
-              <a href="#about" class="glass-btn">Explore Forum</a>
-              <a href="#committees" class="glass-btn secondary">Committees</a>
-            </div>
           </div>
         </div>
       </section>
+
+      <!-- New Event Gallery Section -->
+      <section class="event-gallery" id="gallery">
+        <div class="container">
+          
+          <div class="section-header reveal reveal-up active" style="margin-bottom: 50px; text-align: center; position: relative; z-index: 2;">
+            <span class="section-tag">ACHIEVEMENT</span>
+            <h2 class="section-title" style="color: #ffffff; font-size: 2.8rem; margin-bottom: 20px; font-family: var(--font-heading); text-transform: uppercase;">Clash of Departments (CoD)</h2>
+            <p class="section-desc" style="color: rgba(255,255,255,0.8); max-width: 700px; margin: 0 auto; line-height: 1.6; font-size: 1.05rem;">
+              Flagship inter-departmental competition featuring technical and cultural challenges.<br>
+              <strong style="color: var(--accent-orange);">Special Mention:</strong> The Department of Computer Science & Engineering (Data Science) proudly secured the Championship Title in the first edition!
+            </p>
+          </div>
+
+          <div class="swiper mySwiper reveal reveal-up active">
+            <div class="swiper-wrapper">
+              
+              <!-- Set 1 -->
+              <div class="swiper-slide">
+                <img src="assest/cod_photo/DSC04705.JPG.jpeg" alt="CoD Champions">
+                <div class="slide-overlay">
+                  <div class="slide-tag">CHAMPIONS</div>
+                  <h3 class="slide-title">CoD Winners</h3>
+                  <div class="slide-details"><span>JDCOEM Campus</span></div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="assest/cod_photo/DSC04710.JPG.jpeg" alt="CoD Synergy">
+                <div class="slide-overlay">
+                  <div class="slide-tag">TEAMWORK</div>
+                  <h3 class="slide-title">Unbeatable Synergy</h3>
+                  <div class="slide-details"><span>JDCOEM Campus</span></div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="assest/cod_photo/DSC04725.JPG.jpeg" alt="CoD Victory">
+                <div class="slide-overlay">
+                  <div class="slide-tag">VICTORY</div>
+                  <h3 class="slide-title">Trophy Lift</h3>
+                  <div class="slide-details"><span>JDCOEM Campus</span></div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="assest/cod_photo/DSC_3804.JPG.jpeg" alt="Data Science Pride">
+                <div class="slide-overlay">
+                  <div class="slide-tag">PRIDE</div>
+                  <h3 class="slide-title">Data Science Dept</h3>
+                  <div class="slide-details"><span>JDCOEM Campus</span></div>
+                </div>
+              </div>
+              
+              <!-- Set 2 (Duplicated for seamless 3D loop) -->
+              <div class="swiper-slide">
+                <img src="assest/cod_photo/DSC04705.JPG.jpeg" alt="CoD Champions">
+                <div class="slide-overlay">
+                  <div class="slide-tag">CHAMPIONS</div>
+                  <h3 class="slide-title">CoD Winners</h3>
+                  <div class="slide-details"><span>JDCOEM Campus</span></div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="assest/cod_photo/DSC04710.JPG.jpeg" alt="CoD Synergy">
+                <div class="slide-overlay">
+                  <div class="slide-tag">TEAMWORK</div>
+                  <h3 class="slide-title">Unbeatable Synergy</h3>
+                  <div class="slide-details"><span>JDCOEM Campus</span></div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="assest/cod_photo/DSC04725.JPG.jpeg" alt="CoD Victory">
+                <div class="slide-overlay">
+                  <div class="slide-tag">VICTORY</div>
+                  <h3 class="slide-title">Trophy Lift</h3>
+                  <div class="slide-details"><span>JDCOEM Campus</span></div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="assest/cod_photo/DSC_3804.JPG.jpeg" alt="Data Science Pride">
+                <div class="slide-overlay">
+                  <div class="slide-tag">PRIDE</div>
+                  <h3 class="slide-title">Data Science Dept</h3>
+                  <div class="slide-details"><span>JDCOEM Campus</span></div>
+                </div>
+              </div>
+
+            </div>
+            
+            <!-- Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </section>
+
     </div>
 
     <!-- VIEW 2: ABOUT (About Description, Vision/Mission, Stats, Mentors) -->
@@ -231,6 +327,7 @@
           <!-- Student Admins Grid -->
           <div class="com-member-heading" style="margin-bottom: 30px;">Student Admins</div>
           <div class="admins-grid">
+            <!-- 1. Arundhati Shinde -->
             <div class="admin-card glass-panel reveal reveal-up">
               <div class="admin-img-box">
                 <span class="admin-placeholder">AS</span>
@@ -238,20 +335,26 @@
               <h3 class="mentor-name">Arundhati Shinde</h3>
               <div class="mentor-role">President</div>
             </div>
+
+            <!-- 2. Rohan Salunke -->
             <div class="admin-card glass-panel reveal reveal-up">
               <div class="admin-img-box">
-                <span class="admin-placeholder">RS</span>
+                <img src="assest/logo/rohan_salunke.jpg" alt="Rohan Salunke" class="mentor-img" style="object-position: center 15%;">
               </div>
               <h3 class="mentor-name">Rohan Salunke</h3>
               <div class="mentor-role">Vice President</div>
             </div>
+
+            <!-- 3. Ahsan Ateeb -->
             <div class="admin-card glass-panel reveal reveal-up">
               <div class="admin-img-box">
-                <span class="admin-placeholder">AA</span>
+                <img src="assest/logo/ateeb.jpg" alt="Ahsan Ateeb" class="mentor-img" style="object-position: center 15%;">
               </div>
               <h3 class="mentor-name">Ahsan Ateeb</h3>
               <div class="mentor-role">Secretary</div>
             </div>
+
+            <!-- 4. Alok Sakharkar -->
             <div class="admin-card glass-panel reveal reveal-up">
               <div class="admin-img-box">
                 <span class="admin-placeholder">AS</span>
@@ -259,6 +362,8 @@
               <h3 class="mentor-name">Alok Sakharkar</h3>
               <div class="mentor-role">Joint- Secretary</div>
             </div>
+
+            <!-- 5. Sakshant Waghmare -->
             <div class="admin-card glass-panel reveal reveal-up">
               <div class="admin-img-box">
                 <span class="admin-placeholder">SW</span>
@@ -266,27 +371,35 @@
               <h3 class="mentor-name">Sakshant Waghmare</h3>
               <div class="mentor-role">Treasurer</div>
             </div>
+
+            <!-- 6. Siddhi Nagpure -->
             <div class="admin-card glass-panel reveal reveal-up">
               <div class="admin-img-box">
-                <span class="admin-placeholder">SN</span>
+                <img src="assest/logo/siddhi_nagpure.jpg" alt="Siddhi Nagpure" class="mentor-img" style="object-position: center 15%;">
               </div>
               <h3 class="mentor-name">Siddhi Nagpure</h3>
               <div class="mentor-role">Joint-Treasurer</div>
             </div>
+
+            <!-- 7. Abhay Kamble -->
             <div class="admin-card glass-panel reveal reveal-up">
               <div class="admin-img-box">
-                <span class="admin-placeholder">GP</span>
-              </div>
-              <h3 class="mentor-name">Gokul Pawar</h3>
-              <div class="mentor-role">Digital Administrator</div>
-            </div>
-            <div class="admin-card glass-panel reveal reveal-up">
-              <div class="admin-img-box">
-                <span class="admin-placeholder">AK</span>
+                <img src="assest/logo/abhay.jpg" alt="Abhay Kamble" class="mentor-img" style="transform: scale(2.5); object-position: center 8%;">
               </div>
               <h3 class="mentor-name">Abhay Kamble</h3>
               <div class="mentor-role">Technical Administrator</div>
             </div>
+
+            <!-- 8. Gokul Pawar -->
+            <div class="admin-card glass-panel reveal reveal-up">
+              <div class="admin-img-box">
+                <img src="assest/logo/gokul.jpg" alt="Gokul Pawar" class="mentor-img" style="object-position: center 15%;">
+              </div>
+              <h3 class="mentor-name">Gokul Pawar</h3>
+              <div class="mentor-role">Digital Administrator</div>
+            </div>
+
+            <!-- 9. Shreyash Bagde -->
             <div class="admin-card glass-panel reveal reveal-up">
               <div class="admin-img-box">
                 <span class="admin-placeholder">SB</span>
@@ -294,6 +407,8 @@
               <h3 class="mentor-name">Shreyash Bagde</h3>
               <div class="mentor-role">Cultural Administrator</div>
             </div>
+
+            <!-- 10. Kiran Harinkhede -->
             <div class="admin-card glass-panel reveal reveal-up">
               <div class="admin-img-box">
                 <span class="admin-placeholder">KH</span>
@@ -301,6 +416,8 @@
               <h3 class="mentor-name">Kiran Harinkhede</h3>
               <div class="mentor-role">Spokesperson</div>
             </div>
+
+            <!-- 11. Siddhi Patil -->
             <div class="admin-card glass-panel reveal reveal-up">
               <div class="admin-img-box">
                 <span class="admin-placeholder">SP</span>
@@ -308,6 +425,8 @@
               <h3 class="mentor-name">Siddhi Patil</h3>
               <div class="mentor-role">Co-Spokesperson</div>
             </div>
+
+            <!-- 12. Pooja Dehankar -->
             <div class="admin-card glass-panel reveal reveal-up">
               <div class="admin-img-box">
                 <span class="admin-placeholder">PD</span>
@@ -315,6 +434,8 @@
               <h3 class="mentor-name">Pooja Dehankar</h3>
               <div class="mentor-role">Co-Spokesperson</div>
             </div>
+
+            <!-- 13. Riddesh Sahare -->
             <div class="admin-card glass-panel reveal reveal-up">
               <div class="admin-img-box">
                 <span class="admin-placeholder">RS</span>
@@ -759,6 +880,7 @@
   </footer>
 
   <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

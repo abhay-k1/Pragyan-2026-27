@@ -424,4 +424,32 @@ document.addEventListener('DOMContentLoaded', () => {
       displayCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     }, 150);
   };
+
+  // 6. Initialize Swiper for Event Gallery
+  if (document.querySelector('.mySwiper')) {
+    new Swiper('.mySwiper', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 35,
+        stretch: 0,
+        depth: 250,
+        modifier: 1,
+        slideShadows: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      loop: true,
+      initialSlide: 0,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      speed: 1200,
+    });
+  }
 });
