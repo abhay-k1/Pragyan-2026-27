@@ -133,14 +133,14 @@ section {
 }
 
 .committees {
-  background: linear-gradient(to bottom, rgba(15, 23, 42, 0.5) 0%, rgba(15, 23, 42, 0.4) 100%), url('assest/campus photos/committees.png');
+  background: linear-gradient(to bottom, #0f172a 0%, rgba(15, 23, 42, 0.5) 25%, rgba(15, 23, 42, 0.4) 100%), url('assest/campus photos/committees.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
 .updates {
-  background: linear-gradient(to bottom, rgba(15, 23, 42, 0.6) 0%, rgba(15, 23, 42, 0.5) 100%), url('assest/campus photos/updates (event planner).png');
+  background: linear-gradient(to bottom, rgba(15, 23, 42, 0.6) 0%, rgba(15, 23, 42, 0.5) 100%), url('assest/campus photos/news_bg.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -1057,31 +1057,11 @@ section {
 .forum-body {
   position: relative;
   z-index: 1;
-  background: none !important;
+  background: linear-gradient(to bottom, rgba(15, 23, 42, 0.65) 0%, rgba(15, 23, 42, 0.55) 75%, #0f172a 100%), url('assest/campus photos/forum_body_bg.jpg') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-attachment: fixed !important;
   overflow: hidden;
-}
-
-.forum-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(to bottom, rgba(15, 23, 42, 0.65) 0%, rgba(15, 23, 42, 0.55) 100%), url('assest/campus photos/About.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: -1;
-  pointer-events: none;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.4s ease, visibility 0.4s ease;
-}
-
-#committee-view.active .forum-body::before {
-  opacity: 1;
-  visibility: visible;
 }
 
 .forum-body-toggle {
@@ -1550,6 +1530,10 @@ section {
 
 @media screen and (max-width: 768px) {
   .swiper-slide {
+    width: 340px;
+    height: 230px;
+  }
+}
 
 /* SPA Page switcher layout */
 .page-section {
@@ -1570,7 +1554,7 @@ section {
   padding: 80px 0;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(to bottom, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0.7) 100%), url('assest/campus photos/file_000000003f6481f8865a90da554e70b9.png');
+  background: linear-gradient(to bottom, rgba(10, 29, 65, 0.96) 0%, rgba(15, 23, 42, 0.9) 100%), url('assest/campus photos/file_000000003f6481f8865a90da554e70b9.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -1697,3 +1681,32 @@ section {
     height: 230px;
   }
 }
+
+/* Scroll Reveal Animations */
+.reveal {
+  opacity: 0;
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
+}
+
+.reveal-up {
+  transform: translateY(40px);
+}
+
+.reveal-down {
+  transform: translateY(-40px);
+}
+
+.reveal-left {
+  transform: translateX(-40px);
+}
+
+.reveal-right {
+  transform: translateX(40px);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
